@@ -1,0 +1,16 @@
+{
+    "name": "cryptocovenapi",
+    "license": "UNLICENSED",
+    "scripts": {
+        "codegen": "graph codegen",
+        "build": "graph build",
+        "deploy": "graph deploy --node https://api.staging.thegraph.com/deploy/ --ipfs https://api.staging.thegraph.com/ipfs/ azf20/very-cool-subgraph",
+        "create-local": "graph create --node http://localhost:8020/ shzxcv/testerc721",
+        "remove-local": "graph remove --node http://localhost:8020/ shzxcv/testerc721",
+        "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 shzxcv/testerc721"
+    },
+    "dependencies": {
+        "@graphprotocol/graph-cli": "0.36.1",
+        "@graphprotocol/graph-ts": "0.29.0"
+    }
+}
